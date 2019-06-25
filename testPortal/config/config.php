@@ -1,9 +1,5 @@
 <?php
-/*
-Config File
-Date- 03-01-2019
 
-*/
 
 date_default_timezone_set("Asia/Kolkata");
 
@@ -45,14 +41,7 @@ function display_error() {
 
 }	
 
-function sanitize_my_email($field='') {
-    $field = filter_var($field, FILTER_SANITIZE_EMAIL);
-    if (filter_var($field, FILTER_VALIDATE_EMAIL)) {
-        return true;
-    } else {
-        return false;
-    }
-}
+
 
 function clearSpecialChar($string) {
 
